@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body onload="init();">
+  <div id="calculadora">
+    <div id="pantalla">
+      <!--<input type="text" autocomplete="off" id="numeros-pantalla" placeholder="0">
+      <input type="text" autocomplete="off"  id="resultado" readonly>-->
+      <span id="operacion"></span>
+      <span id="numeros-pantalla"></span>
+      <span id="resultado"></span>
+    </div>
+    <h1>Calculadora<br>Launch X</h1>
+    <div id="botones">
+      <table>
+        <tr>
+          <td><button class="boton simbolo" id="euler" value="e"><i>e</i></button></td>
+          <td><button class="boton simbolo" id="pi" value="π">π</button></td>
+          <td><button class="boton simbolo" id="borratodo" value="limpiar">C</button></td>
+          <td colspan="2"><button class="boton simbolo" id="retroceso" value="retr">&larr;</button></td>
+        </tr>
+        <tr>
+          <td><button class="boton numero" id="siete" value="7">7</button></td>
+          <td><button class="boton numero" id="ocho" value="8">8</button></td>
+          <td><button class="boton numero" id="nueve" value="9">9</button></td>
+          <td><button class="boton simbolo" id="division" value="/">÷</button></td>
+          <td><button class="boton simbolo" id="raiz" value="raiz">√</button></td>
+        </tr>
+        <tr>
+          <td><button class="boton numero" id="cuatro" value="4">4</button></td>
+          <td><button class="boton numero" id="cinco" value="5">5</button></td>
+          <td><button class="boton numero" id="seis" value="6">6</button></td>
+          <td><button class="boton simbolo" id="multiplicacion" value="*">x</button></td>
+          <td><button class="boton simbolo" id="potencia" value="potencia">^</button></td>
+        </tr>
+        <tr>
+          <td><button class="boton numero" id="uno" value="1">1</button></td>
+          <td><button class="boton numero" id="dos" value="2">2</button></td>
+          <td><button class="boton numero" id="tres" value="3">3</button></td>
+          <td><button class="boton simbolo" id="resta" value="-">-</button></td>
+          <td rowspan="2"><button class="boton simbolo" id="igual" value="=">=</button></td>
+        </tr>
+        <tr>
+          <td><button class="boton numero" id="cero" value="0">0</button></td>
+          <td><button class="boton simbolo" id="punto" value=".">.</button></td>
+          <td><button class="boton simbolo" id="sobrante" value="%">%</button></td>
+          <td><button class="boton simbolo" id="suma" value="+">+</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+<script type="text/JavaScript" src="./app.js"></script>
+</html>
