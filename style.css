@@ -41,7 +41,6 @@ body {
   border: none;
   font-family: 'Orbitron', sans-serif;
   margin: 0;
-  overflow-y: scroll;
 }
 
 #numeros-pantalla {
